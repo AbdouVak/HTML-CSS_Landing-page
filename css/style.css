@@ -114,6 +114,7 @@
     padding-top: 30px;/*gere l'espace entre le contenue et la bordure*/
     padding-right:35%;/*gere l'espace entre le contenue et la bordure de droite*/
     padding-left:35%;/*gere l'espace entre le contenue et la bordure du gauche*/
+    justify-content: space-around;
 }
 
 #sectionFeatures  main{
@@ -140,7 +141,7 @@
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #sectionFeatures .accomplissement{
@@ -149,15 +150,15 @@
 }
 
 #sectionFeatures .membre{
+    align-items: center;
     display: flex;
     flex-direction: column;
+    padding-top: 100px;
 }
 
 #sectionFeatures .membre img{
     border-radius: 50%;
-    width: 60%;
-    padding-left: 10%;
-    padding-right: 10%;
+    width: 50%;
 }
 
 
