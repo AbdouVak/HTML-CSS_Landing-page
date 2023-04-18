@@ -1,0 +1,164 @@
+*{
+    margin : 0;
+    padding : 0;
+    vertical-align: top;
+    font-family: "Poppins";/*change la police d'écriture*/
+}
+
+
+/*------------------------------------------------SECTIONHOME------------------------------------------------*/
+
+
+/* ---------------------HEADER--------------------- */
+header{/*Change la position du nom de l'entreprise,du nav et des font des reseaux*/
+    display: flex;/*gére l'affichage des élements*/
+    flex-direction: row;/*specifie l'ordre des elements, ici de gauche a droite*/
+    justify-content: space-around;/*specifie la distribution de l'espace restant des elements*/
+    color: white;/*change la couleur du texte*/
+    padding-top: 30px;/*gere l'espace entre le contenue et la bordure*/
+}
+
+nav{/*Change la distance entre chaque lien*/
+    display: flex;/*gére l'affichage des élements*/
+    gap: 40px;/*gere l'espace qui separe chaque ligne et colonne*/
+}
+
+/* ---------------------Main--------------------- */
+main{/*gere la position entre titre/texte/bouton et l'image*/
+    display: flex;/*gére l'affichage des élements*/
+    flex-direction: row;/*specifie l'ordre des elements, ici de gauche a droite*/
+    justify-content: space-between;/*specifie la distribution de l'espace restant des elements*/
+    padding-top:140px;/*gere l'espace entre le contenue et la bordure du haut*/
+    padding-right:12%;/*gere l'espace entre le contenue et la bordure de droite*/
+    padding-left:12%;/*gere l'espace entre le contenue et la bordure du gauche*/
+    gap: 150px;
+}
+
+/* ------------------------------------------ */
+#sectionHome {/*classe qui gére la page*/
+    display:flex;/*gére l'affichage des élements*/
+    min-height: 100vh;/*gére la hauteur minimal*/
+    flex-direction: column;/*specifie l'ordre des elements, ici de haut en bas*/
+    background: radial-gradient(rgb(139, 195, 245),#1294b8);/*change la couleur de fond + avec un degradé*/
+}
+
+a{/*gere les lien dans nav*/
+    text-decoration: none;/*enleve le soulignement*/
+    color: white;/*change la couleur du texte*/
+}
+
+#reseaux{/*classe qui gere l'esapce entre les font reseaux sociaux*/
+    display: flex;/*gére l'affichage des élements*/
+    gap: 30px;/*gere l'espace qui separe chaque ligne et colonne*/
+}
+
+#presentation{/*gere la position et le defilement des élements titre/paragraphe/bouton*/
+    display: flex;/*gére l'affichage des élements*/
+    flex-direction: column;/*specifie l'ordre des elements, ici de haut en bas*/
+    justify-content: center;/*specifie la distribution de l'espace restant des elements*/
+}
+
+#presentation h1{/*gere le titre*/
+    font-size: 60px;/*change la tailler de la police*/
+    line-height: 80px;/*change l'espace entre les lignes*/
+
+}
+
+#presentation p{/*gere le paragraphe et sont espace entre le titre et le bouton*/
+    font-size: 20px;/*change la tailler de la police*/
+    line-height: 30px;/*change l'espace entre les lignes*/
+    padding-top: 30px;/*gere l'espace entre le contenue et la bordure du haut*/
+    padding-bottom: 30px;/*gere l'espace entre le contenue et la bordure du bas*/
+}
+
+.buttonIn {/*class qui gere le bouton*/
+    display: flex;/*gére l'affichage des élements*/
+    justify-content: space-between;/*specifie la distribution de l'espace restant des elements*/
+    width: 450px;/*change la largeur*/
+    border-radius: 40px;/*change la bordure plus c'est élever plus ça sera arrondie*/
+    background: rgba(255, 255, 255, 0.839);/*change la couleur de fond*/
+    padding: 5px;/*gere l'espace entre le contenue et la bordure*/
+}
+
+.buttonIn button{/*gere la position/couleur/bordure du bouton*/
+    color: white;/*change la couleur du texte*/
+    background-color:rgb(38, 142, 202);/*change la couleur de fond*/
+    padding: 10px;/*gere l'espace entre le contenue et la bordure*/
+    padding-left: 30px;/*gere l'espace entre le contenue et la bordure de droite*/
+    padding-right: 30px;/*gere l'espace entre le contenue et la bordure du gauche*/
+    border-radius: 40px;/*change la bordure plus c'est élever plus ça sera arrondie*/    
+    border: 0;/*gere la bordure du bouton, ici ça l'enlever*/
+    cursor: pointer;/*changer le curseur quand on passe dessus*/
+}
+
+.buttonIn input{/*gere la position/couleur/bordure/police du champ de saisie*/
+    background-color: rgba(255, 255, 255, 0);/*change la couleur de fond*/
+    border-radius: 40px;/*change la bordure plus c'est élever plus ça sera arrondie*/    
+    border: 0;/*gere la bordure du bouton, ici ça l'enlever*/
+    padding: 10px;/*gere l'espace entre le contenue et la bordure*/
+    padding-left: 10px;/*gere l'espace entre le contenue et la bordure de droite*/
+    padding-right: 30px;/*gere l'espace entre le contenue et la bordure du gauche*/
+    font-style: italic;/*change la police ici en italique*/
+    outline: 0;/*gere la bordure du champ de texte, ici ça l'enlever*/
+}
+
+
+/*------------------------------------------------SECTIONHOME------------------------------------------------*/
+
+
+/* ---------------------HEADER--------------------- */
+#sectionFeatures header{/*Change la position du nom de l'entreprise,du nav et des font des reseaux*/
+    display: flex;/*gére l'affichage des élements*/
+    flex-direction: column;/*specifie l'ordre des elements, ici de gauche a droite*/
+    justify-content: center;/*specifie la distribution de l'espace restant des elements*/
+    color: black;/*change la couleur du texte*/
+    padding-top: 30px;/*gere l'espace entre le contenue et la bordure*/
+    padding-right:35%;/*gere l'espace entre le contenue et la bordure de droite*/
+    padding-left:35%;/*gere l'espace entre le contenue et la bordure du gauche*/
+}
+
+#sectionFeatures  main{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+
+}
+
+/* ------------------------------------------ */
+#sectionFeatures {/*classe qui gére la page*/
+    display:flex;/*gére l'affichage des élements*/
+    min-height: 100vh;/*gére la hauteur minimal*/
+    flex-direction: column;/*specifie l'ordre des elements, ici de haut en bas*/
+    background: white;/*change la couleur de fond + avec un degradé*/
+}
+
+#sectionFeatures  p,h1,h2{
+    text-align: center;
+}
+#sectionFeatures p{
+    color: grey;
+}
+#sectionFeatures .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#sectionFeatures .accomplissement{
+    display: flex;
+    flex-direction: column;
+}
+
+#sectionFeatures .membre{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#sectionFeatures .membre img{
+    border-radius: 50%;
+    width: 80%;
+    padding-top: 50px;
+
+}
+
+
