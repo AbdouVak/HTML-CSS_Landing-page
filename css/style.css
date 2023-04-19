@@ -7,10 +7,14 @@
 
 
 /*------------------------------------------------------------------------SectionHOME------------------------------------------------------------------------*/
-
+#sectionHome {
+    display:flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: radial-gradient(rgb(139, 195, 245),#1294b8);
+}
 
 /* ---------------------HEADER--------------------- */
-
 #sectionHome header{
     display: flex;
     flex-direction: row;
@@ -19,13 +23,13 @@
     padding-top: 30px;
 }
 
+/* ---------------------NAV--------------------- */
 #sectionHome nav{
     display: flex;
     gap: 40px;
 }
 
-/* ---------------------Main--------------------- */
-
+/* ---------------------MAIN--------------------- */
 #sectionHome main{
     display: flex;
     flex-direction: row;
@@ -36,20 +40,12 @@
     gap: 150px;
 }
 
-/* ---------------------ID et Class--------------------- */
-
-#sectionHome {
-    display:flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background: radial-gradient(rgb(139, 195, 245),#1294b8);
-}
-
 #sectionHome a{
     text-decoration: none;
     color: white;
 }
 
+/* ---------------------ID/CLASS--------------------- */
 /* ---------Reseaux--------- */
 #sectionHome #reseaux{
     display: flex;
@@ -109,13 +105,36 @@
 
 
 /*------------------------------------------------------------------------SectionFEATURES------------------------------------------------------------------------*/
+#sectionFeatures {
+    display:flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: white;
+}
+
+#sectionFeatures i{
+    font-size: 70px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
 
 /* ---------------------HEADER--------------------- */
 #sectionFeatures header p{
     text-align: center;
     color: grey;
+    font-size: 20px;
     padding-left: 30%;
     padding-right: 30%;
+}
+#sectionFeatures header h1{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
 }
 
 /* ---------------------MAIN--------------------- */
@@ -127,18 +146,11 @@
     padding-top: 100px;
 }
 
-/* ---------------------ID et Class--------------------- */
-
-#sectionFeatures {
-    display:flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background: white;
-}
+/* ---------------------ID/CLASS--------------------- */
 /* ---------Card--------- */
 #sectionFeatures .card{
-    width: 350px;
-    height: 350px;
+    width: 500px;
+    height: 500px;
     background: radial-gradient(rgb(139, 195, 245),#1294b8);
     color: white;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -149,7 +161,7 @@
 }
 
 #sectionFeatures .card p{
-    font-size: 12px;
+    font-size: 20px;
     padding-top: 10px;
     padding-left: 5%;
     padding-right: 5%;
@@ -159,35 +171,8 @@
     transform: translateY(-10px);
 
 }
-/* ---------logo Font Awesome--------- */
-#sectionFeatures .FA{
-    font-size: 40px;
-    padding-top: 100px;
-}
 
 /*------------------------------------------------------------------------SectionABOUT------------------------------------------------------------------------*/
-
-/* ---------------------HEADER--------------------- */
-#sectionAbout header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: black;
-    padding-top: 30px;
-    padding-right:35%;
-    padding-left:35%;
-    justify-content: space-around;
-}
-
-/* ---------------------Main--------------------- */
-#sectionAbout  main{
-    display: flex;
-    flex-direction: column;
-    padding-top: 100px;
-
-}
-
-/* ---------------------ID et Class--------------------- */
 #sectionAbout {
     display:flex;
     min-height: 100vh;
@@ -195,37 +180,147 @@
     background: white;
 }
 
+#sectionAbout h1{
+    text-align: center;
+    font-size: 40px;
+}
+
 #sectionAbout p{
     text-align: center;
     color: grey;
+    font-size: 20px;
+    padding-bottom: 60px;
 }
 
-#sectionAbout h1{
-    text-align: center;
+#sectionAbout i{
+    color: black;
+    padding: 5px;
 }
 
-#sectionAbout .row{
-    text-align: center;
+/* ---------------------HEADER--------------------- */
+#sectionAbout header{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    padding-top: 70px;
+    padding-right:25%;
+    padding-left:25%;
     justify-content: space-around;
 }
 
-/* ---------Presentation--------- */
-#sectionAbout .accomplissement{
-    display: flex;
-    flex-direction: column;
+#sectionAbout header p{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-/* ---------Membre--------- */
-#sectionAbout .membre{
+/* ---------------------MAIN--------------------- */
+#sectionAbout  main{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+
+}
+
+/* ---------------------ID/CLASS--------------------- */
+/* ---------Row--------- */
+#sectionAbout .row{
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-evenly;         
+    text-align: center;
+}
+
+/* ---------Team--------- */
+#sectionAbout .team{
+    display: flex;    
+    flex-direction: column;    
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding-top: 100px;
+
 }
 
-#sectionAbout .membre img{
-    border-radius: 50%;
-    width: 10%;
+#sectionAbout .PNom{
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    color: rgb(0, 0, 0);
+
 }
+
+#sectionAbout h2{
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+#sectionAbout .team img{
+    width: 250px;
+    filter: grayscale(1);
+}
+
+/* ---------Zoom Image--------- */
+#sectionAbout .teamImg{
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 500px;
+}
+
+#sectionAbout .teamImg img{
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: 0.5s;
+    
+}
+
+#sectionAbout .team:hover .teamImg img{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+/* ---------Apparaition reseaux sociaux--------- */
+
+#sectionAbout .team:hover .RScountainer{
+    left: 20px;
+    top: 80px;
+}
+
+#sectionAbout .RSicon{
+    display: flex;  
+    background-color:rgb(255, 255, 255);
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+#sectionAbout .RScountainer{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color:rgba(255, 255, 255, 0);
+    gap: 10px;
+    top: 0;
+    left: -50px;
+    transition: 0.5s;
+}
+
+/*------------------------------------------------------------------------SectionABOUT------------------------------------------------------------------------*/
+#sectionParallax {
+    display:flex;
+    flex-direction: column;
+}
+
+#sectionParallax .parallax {
+    /* The image used */
+    background-image: url("img/parallax.png");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
