@@ -6,10 +6,11 @@
 }
 
 
-/*------------------------------------------------SECTIONHOME------------------------------------------------*/
+/*------------------------------------------------------------------------SectionHOME------------------------------------------------------------------------*/
 
 
 /* ---------------------HEADER--------------------- */
+
 #sectionHome header{/*Change la position du nom de l'entreprise,du nav et des font des reseaux*/
     display: flex;/*gére l'affichage des élements*/
     flex-direction: row;/*specifie l'ordre des elements, ici de gauche a droite*/
@@ -24,6 +25,7 @@
 }
 
 /* ---------------------Main--------------------- */
+
 #sectionHome main{/*gere la position entre titre/texte/bouton et l'image*/
     display: flex;/*gére l'affichage des élements*/
     flex-direction: row;/*specifie l'ordre des elements, ici de gauche a droite*/
@@ -34,7 +36,8 @@
     gap: 150px;
 }
 
-/* ------------------------------------------ */
+/* ---------------------ID et Class--------------------- */
+
 #sectionHome {/*classe qui gére la page*/
     display:flex;/*gére l'affichage des élements*/
     min-height: 100vh;/*gére la hauteur minimal*/
@@ -102,5 +105,128 @@
 }
 
 
-/*------------------------------------------------SECTIONFEATURES------------------------------------------------*/
+/*------------------------------------------------------------------------SectionFEATURES------------------------------------------------------------------------*/
 
+
+#sectionFeatures h1{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* ---------------------HEADER--------------------- */
+#sectionFeatures header p{
+    text-align: center;
+    color: grey;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+/* ---------------------MAIN--------------------- */
+#sectionFeatures main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5%;
+    padding-top: 100px;
+}
+
+/* ---------------------ID et Class--------------------- */
+
+#sectionFeatures {/*classe qui gére la page*/
+    display:flex;/*gére l'affichage des élements*/
+    min-height: 100vh;/*gére la hauteur minimal*/
+    flex-direction: column;/*specifie l'ordre des elements, ici de haut en bas*/
+    background: white;/*change la couleur de fond*/
+}
+
+#sectionFeatures .card{
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(rgb(139, 195, 245),#1294b8);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#sectionFeatures .card p{
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#sectionFeatures .card:hover{
+    transform: translateY(-10px);
+
+}
+
+#sectionFeatures .FA{
+    font-size: 40px;
+    padding-top: 100px;
+}
+
+/*------------------------------------------------------------------------SectionABOUT------------------------------------------------------------------------*/
+
+/* ---------------------HEADER--------------------- */
+#sectionAbout header{/*Change la position du nom de l'entreprise,du nav et des font des reseaux*/
+    display: flex;/*gére l'affichage des élements*/
+    flex-direction: column;/*specifie l'ordre des elements, ici de gauche a droite*/
+    justify-content: center;/*specifie la distribution de l'espace restant des elements*/
+    color: black;/*change la couleur du texte*/
+    padding-top: 30px;/*gere l'espace entre le contenue et la bordure*/
+    padding-right:35%;/*gere l'espace entre le contenue et la bordure de droite*/
+    padding-left:35%;/*gere l'espace entre le contenue et la bordure du gauche*/
+    justify-content: space-around;
+}
+
+#sectionAbout  main{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+
+}
+
+/* ------------------------------------------ */
+#sectionAbout {/*classe qui gére la page*/
+    display:flex;/*gére l'affichage des élements*/
+    min-height: 100vh;/*gére la hauteur minimal*/
+    flex-direction: column;/*specifie l'ordre des elements, ici de haut en bas*/
+    background: white;/*change la couleur de fond + avec un degradé*/
+}
+
+#sectionAbout p{
+    text-align: center;
+    color: grey;
+}
+
+#sectionAbout h1{
+    text-align: center;
+}
+
+#sectionAbout .row{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#sectionAbout .accomplissement{
+    display: flex;
+    flex-direction: column;
+}
+
+#sectionAbout .membre{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+#sectionAbout .membre img{
+    border-radius: 50%;
+    width: 10%;
+}
