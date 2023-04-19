@@ -2,7 +2,7 @@
     margin : 0;
     padding : 0;
     vertical-align: top;
-    font-family: "Poppins";/*change la police d'écriture*/
+    font-family: "Poppins";
 }
 
 
@@ -11,108 +11,104 @@
 
 /* ---------------------HEADER--------------------- */
 
-#sectionHome header{/*Change la position du nom de l'entreprise,du nav et des font des reseaux*/
-    display: flex;/*gére l'affichage des élements*/
-    flex-direction: row;/*specifie l'ordre des elements, ici de gauche a droite*/
-    justify-content: space-around;/*specifie la distribution de l'espace restant des elements*/
-    color: white;/*change la couleur du texte*/
-    padding-top: 30px;/*gere l'espace entre le contenue et la bordure*/
+#sectionHome header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    padding-top: 30px;
 }
 
-#sectionHome nav{/*Change la distance entre chaque lien*/
-    display: flex;/*gére l'affichage des élements*/
-    gap: 40px;/*gere l'espace qui separe chaque ligne et colonne*/
+#sectionHome nav{
+    display: flex;
+    gap: 40px;
 }
 
 /* ---------------------Main--------------------- */
 
-#sectionHome main{/*gere la position entre titre/texte/bouton et l'image*/
-    display: flex;/*gére l'affichage des élements*/
-    flex-direction: row;/*specifie l'ordre des elements, ici de gauche a droite*/
-    justify-content: space-between;/*specifie la distribution de l'espace restant des elements*/
-    padding-top:140px;/*gere l'espace entre le contenue et la bordure du haut*/
-    padding-right:12%;/*gere l'espace entre le contenue et la bordure de droite*/
-    padding-left:12%;/*gere l'espace entre le contenue et la bordure du gauche*/
+#sectionHome main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:140px;
+    padding-right:12%;
+    padding-left:12%;
     gap: 150px;
 }
 
 /* ---------------------ID et Class--------------------- */
 
-#sectionHome {/*classe qui gére la page*/
-    display:flex;/*gére l'affichage des élements*/
-    min-height: 100vh;/*gére la hauteur minimal*/
-    flex-direction: column;/*specifie l'ordre des elements, ici de haut en bas*/
-    background: radial-gradient(rgb(139, 195, 245),#1294b8);/*change la couleur de fond + avec un degradé*/
+#sectionHome {
+    display:flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: radial-gradient(rgb(139, 195, 245),#1294b8);
 }
 
-#sectionHome a{/*gere les lien dans nav*/
-    text-decoration: none;/*enleve le soulignement*/
-    color: white;/*change la couleur du texte*/
+#sectionHome a{
+    text-decoration: none;
+    color: white;
 }
 
-#sectionHome #reseaux{/*classe qui gere l'esapce entre les font reseaux sociaux*/
-    display: flex;/*gére l'affichage des élements*/
-    gap: 30px;/*gere l'espace qui separe chaque ligne et colonne*/
+/* ---------Reseaux--------- */
+#sectionHome #reseaux{
+    display: flex;
+    gap: 30px;
 }
 
-#sectionHome #presentation{/*gere la position et le defilement des élements titre/paragraphe/bouton*/
-    display: flex;/*gére l'affichage des élements*/
-    flex-direction: column;/*specifie l'ordre des elements, ici de haut en bas*/
-    justify-content: center;/*specifie la distribution de l'espace restant des elements*/
+/* ---------Presentation--------- */
+#sectionHome #presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#sectionHome #presentation h1{/*gere le titre*/
-    font-size: 60px;/*change la tailler de la police*/
-    line-height: 80px;/*change l'espace entre les lignes*/
+#sectionHome #presentation h1{
+    font-size: 60px;
+    line-height: 80px;
 }
 
-#sectionHome #presentation p{/*gere le paragraphe et sont espace entre le titre et le bouton*/
-    font-size: 20px;/*change la tailler de la police*/
-    line-height: 30px;/*change l'espace entre les lignes*/
-    padding-top: 30px;/*gere l'espace entre le contenue et la bordure du haut*/
-    padding-bottom: 30px;/*gere l'espace entre le contenue et la bordure du bas*/
+#sectionHome #presentation p{
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-#sectionHome .buttonIn {/*class qui gere le bouton*/
-    display: flex;/*gére l'affichage des élements*/
-    justify-content: space-between;/*specifie la distribution de l'espace restant des elements*/
-    width: 450px;/*change la largeur*/
-    border-radius: 40px;/*change la bordure plus c'est élever plus ça sera arrondie*/
-    background: rgba(255, 255, 255, 0.839);/*change la couleur de fond*/
-    padding: 5px;/*gere l'espace entre le contenue et la bordure*/
+/* ---------Bouton--------- */
+#sectionHome .buttonIn {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.839);
+    padding: 5px;
 }
 
-#sectionHome .buttonIn button{/*gere la position/couleur/bordure du bouton*/
-    color: white;/*change la couleur du texte*/
-    background-color:rgb(38, 142, 202);/*change la couleur de fond*/
-    padding: 10px;/*gere l'espace entre le contenue et la bordure*/
-    padding-left: 30px;/*gere l'espace entre le contenue et la bordure de droite*/
-    padding-right: 30px;/*gere l'espace entre le contenue et la bordure du gauche*/
-    border-radius: 40px;/*change la bordure plus c'est élever plus ça sera arrondie*/    
-    border: 0;/*gere la bordure du bouton, ici ça l'enlever*/
-    cursor: pointer;/*changer le curseur quand on passe dessus*/
+#sectionHome .buttonIn button{
+    color: white;
+    background-color:rgb(38, 142, 202);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 40px; 
+    border: 0;
+    cursor: pointer;
 }
 
-#sectionHome .buttonIn input{/*gere la position/couleur/bordure/police du champ de saisie*/
-    background-color: rgba(255, 255, 255, 0);/*change la couleur de fond*/
-    border-radius: 40px;/*change la bordure plus c'est élever plus ça sera arrondie*/    
-    border: 0;/*gere la bordure du bouton, ici ça l'enlever*/
-    padding: 10px;/*gere l'espace entre le contenue et la bordure*/
-    padding-left: 10px;/*gere l'espace entre le contenue et la bordure de droite*/
-    padding-right: 30px;/*gere l'espace entre le contenue et la bordure du gauche*/
-    font-style: italic;/*change la police ici en italique*/
-    outline: 0;/*gere la bordure du champ de texte, ici ça l'enlever*/
+#sectionHome .buttonIn input{
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 40px;
+    border: 0;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 30px;
+    font-style: italic;
+    outline: 0;
 }
 
 
 /*------------------------------------------------------------------------SectionFEATURES------------------------------------------------------------------------*/
-
-
-#sectionFeatures h1{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
 /* ---------------------HEADER--------------------- */
 #sectionFeatures header p{
@@ -133,13 +129,13 @@
 
 /* ---------------------ID et Class--------------------- */
 
-#sectionFeatures {/*classe qui gére la page*/
-    display:flex;/*gére l'affichage des élements*/
-    min-height: 100vh;/*gére la hauteur minimal*/
-    flex-direction: column;/*specifie l'ordre des elements, ici de haut en bas*/
-    background: white;/*change la couleur de fond*/
+#sectionFeatures {
+    display:flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: white;
 }
-
+/* ---------Card--------- */
 #sectionFeatures .card{
     width: 350px;
     height: 350px;
@@ -163,7 +159,7 @@
     transform: translateY(-10px);
 
 }
-
+/* ---------logo Font Awesome--------- */
 #sectionFeatures .FA{
     font-size: 40px;
     padding-top: 100px;
@@ -172,17 +168,18 @@
 /*------------------------------------------------------------------------SectionABOUT------------------------------------------------------------------------*/
 
 /* ---------------------HEADER--------------------- */
-#sectionAbout header{/*Change la position du nom de l'entreprise,du nav et des font des reseaux*/
-    display: flex;/*gére l'affichage des élements*/
-    flex-direction: column;/*specifie l'ordre des elements, ici de gauche a droite*/
-    justify-content: center;/*specifie la distribution de l'espace restant des elements*/
-    color: black;/*change la couleur du texte*/
-    padding-top: 30px;/*gere l'espace entre le contenue et la bordure*/
-    padding-right:35%;/*gere l'espace entre le contenue et la bordure de droite*/
-    padding-left:35%;/*gere l'espace entre le contenue et la bordure du gauche*/
+#sectionAbout header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    padding-top: 30px;
+    padding-right:35%;
+    padding-left:35%;
     justify-content: space-around;
 }
 
+/* ---------------------Main--------------------- */
 #sectionAbout  main{
     display: flex;
     flex-direction: column;
@@ -190,12 +187,12 @@
 
 }
 
-/* ------------------------------------------ */
-#sectionAbout {/*classe qui gére la page*/
-    display:flex;/*gére l'affichage des élements*/
-    min-height: 100vh;/*gére la hauteur minimal*/
-    flex-direction: column;/*specifie l'ordre des elements, ici de haut en bas*/
-    background: white;/*change la couleur de fond + avec un degradé*/
+/* ---------------------ID et Class--------------------- */
+#sectionAbout {
+    display:flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: white;
 }
 
 #sectionAbout p{
@@ -214,11 +211,13 @@
     justify-content: space-around;
 }
 
+/* ---------Presentation--------- */
 #sectionAbout .accomplissement{
     display: flex;
     flex-direction: column;
 }
 
+/* ---------Membre--------- */
 #sectionAbout .membre{
     align-items: center;
     display: flex;
