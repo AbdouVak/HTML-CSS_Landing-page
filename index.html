@@ -14,7 +14,6 @@
     <div id="container">
 
         <!-------------------------------------SectionHOME-------------------------------------->
-
         <section id="sectionHome">
             <!------------------Header------------------>
             <header>
@@ -52,8 +51,8 @@
             </main>
         </section>
 
-        <!--------------------------------------SectionFeatures-------------------------------------->
 
+        <!--------------------------------------SectionFeatures-------------------------------------->
         <section id="sectionFeatures">
             <!------------------Header------------------>
             <header>
@@ -85,8 +84,8 @@
             </main>
         </section>
 
-        <!--------------------------------------SectionAbout-------------------------------------->
 
+        <!--------------------------------------SectionAbout-------------------------------------->
         <section id="sectionAbout">
 
             <!------------------Header------------------>
@@ -101,10 +100,10 @@
                 <div class="row">
 
                     <!------------------Membre 1------------------>
-                    <div class="team">
+                    <div class="card">
                         <h2>1499+</h2>
                         <p>Complete Poject</p>  
-                        <div class="teamImg">
+                        <div class="card-header">
                             <img src="img/person1.png" alt="">
                             <!------------------RS icon------------------>
                             <div class="RScountainer">
@@ -114,19 +113,19 @@
                             </div>
                         </div>
 
-                        <div>
-                            <p class="PNom">Anna G.Wilhite</p>
+                        <div class="card-text">
+                            <p>Anna G.Wilhite</p>
                             <p>CEO/Founder</p>                    
                         </div>
                     </div> 
 
                     <!------------------Membre 2------------------>
-                    <div class="team">
+                    <div class="card">
                         <h2>1080K</h2>
                         <p>Satisfied Clients</p>
 
                         <!------------------RS icon------------------>
-                        <div class="teamImg">
+                        <div class="card-header">
                             <img src="img/person2.png" alt="">
                             
                             <div class="RScountainer">
@@ -136,17 +135,17 @@
                             </div>
                         </div>
 
-                        <div>
-                            <p class="PNom">William S.Blay</p>
+                        <div class="card-text">
+                            <p>William S.Blay</p>
                             <p>CTO/Co-Founder</p>                    
                         </div>
                     </div>
 
                     <!------------------Membre 3------------------>
-                    <div class="team">
+                    <div class="card">
                         <h2>608</h2>
                         <p>Team member</p>  
-                        <div class="teamImg">
+                        <div class="card-header">
                             <img src="img/person3.png" alt="">
                             <!------------------RS icon------------------>
                             <div class="RScountainer">
@@ -156,17 +155,17 @@
                             </div>  
                         </div>
 
-                        <div>
-                            <p class="PNom">Maria B.Morales</p>
+                        <div  class="card-text">
+                            <p>Maria B.Morales</p>
                             <p>Web Designer</p>                    
                         </div>
                     </div>
 
                     <!------------------Membre 4------------------>
-                    <div class="team">
+                    <div class="card">
                         <h2>252</h2>
                         <p>Employee</p>   
-                        <div class="teamImg">
+                        <div class="card-header">
                             <img src="img/person4.png" alt="">
                             <!------------------RS icon------------------>
                             <div class="RScountainer">
@@ -176,8 +175,8 @@
                             </div>
                         </div>
 
-                        <div>
-                            <p class="PNom">Luke L. Jhonson</p>
+                        <div class="card-text">
+                            <p >Luke L. Jhonson</p>
                             <p>Web Developper</p>                    
                         </div>
                     </div>
@@ -185,21 +184,61 @@
                 </div>
         </section>
 
+
         <!--------------------------------------SectionParallax-------------------------------------->
         <section id="sectionParallax">
             
-            <div class="parallax">
-                <h1>Let's get started with Kucra</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illum nihil dolore facere laborum, in voluptatibus sequi eius pariatur quidem perferendis quae! Ipsa vitae doloribus praesentium dicta impedit temporibus hic.</p>
-                <div class="hover"><button type="button">Get Started</button></div>
+            <div class="center parallax bgImg" >
+                <div class="center">
+                    <h1>Let's get started with Kucra</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illum nihil dolore facere laborum, in voluptatibus sequi eius pariatur quidem perferendis quae! Ipsa vitae doloribus praesentium dicta impedit temporibus hic.</p>
+                    <div class="hover"><button type="button">Get Started</button></div>
+                </div>
+                <div id="overlay"></div>
             </div>
-            
         </section>
+
 
         <!--------------------------------------Section-------------------------------------->
         <section id="sectionBlog">
-            <div class="">Blog</div>
+            <header>
+                <h1>Our Blog</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.velit deleniti minus? Molestias, delectus assumenda est quos a inventore cum.</p>
+            </header>
 
+            <main class="row">
+
+                <div class ="card">
+                    <img src="img/blog3.png" alt="">
+                    <h2>Doing a cross contry road trip</h2>
+                    <p>Lorem illum ex voluptate magnam rem, minus sit possimus, repellendus quam dolorem.</p>
+                    <a href="">Read more</a>
+                </div>
+
+                <div class ="card">
+                    <img src="img/blog1.png" alt="">
+                    <h2>New exhibition at our Museum</h2>
+                    <p>Lorem illum ex voluptate magnam rem, minus sit possimus, repellendus quam dolorem.</p>
+                    <a href="">Read more</a>
+                </div>
+
+                <div class ="card">
+                    <div class="card-header">
+                        <div class="info">
+                            <div class="infoName"><i class="fa-regular fa-user"></i><h3>Theresat Sinclair</h3></div>
+                            <div class="infoDate"><i class="fa-regular fa-clock"></i><p>25th july 2021</p></div>
+                        </div>
+                        <img src="img/blog2.png" alt="">
+                    </div>
+
+                    <div class="card-text">
+                        <h2>Design your apps in your own way</h2>
+                        <p>Lorem illum ex voluptate magnam rem, minus sit possimus, repellendus quam dolorem.</p>
+                        <a href="">Read more</a>
+                    </div>
+                </div>
+
+            </main>
             
         </section>
     </div>
