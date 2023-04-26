@@ -5,6 +5,13 @@
     font-family: "Poppins";
 }
 
+/* ---------Row--------- */
+.row{
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-evenly;         
+    text-align: center;
+}
 
 /*------------------------------------------------------------------------SectionHOME------------------------------------------------------------------------*/
 #sectionHome {
@@ -223,23 +230,17 @@
 }
 
 /* ---------------------ID/CLASS--------------------- */
-/* ---------Row--------- */
-#sectionAbout .row{
-    display: flex;
-    flex-direction: row;   
-    justify-content: space-evenly;         
-    text-align: center;
-}
+
 
 /* ---------Team--------- */
-#sectionAbout .team{
+#sectionAbout .card{
     display: flex;    
     flex-direction: column;    
     align-items: center;
 
 }
 
-#sectionAbout .PNom{
+#sectionAbout .card-texte p{
     font-size: 25px;
     padding-top: 10px;
     padding-bottom: 0px;
@@ -253,37 +254,36 @@
     color: rgb(0, 0, 0);
 }
 
-#sectionAbout .team img{
+#sectionAbout .card img{
     width: 250px;
     filter: grayscale(1);
 }
 
 /* ---------Zoom Image--------- */
-#sectionAbout .teamImg{
+#sectionAbout .card-header{
     position: relative;
     overflow: hidden;
 
     border-radius: 500px;
 }
 
-#sectionAbout .teamImg img{
+#sectionAbout .card-header img{
     object-fit: cover;
     filter: grayscale(1);
     transition: 0.5s;
     
 }
 
-#sectionAbout .team .teamImg:hover img{
+#sectionAbout .card .card-header:hover img{
     filter: grayscale(0);
     transform: scale(1.1);
 }
 
 /* ---------Apparaition RS--------- */
 
-#sectionAbout .teamImg:hover .RScountainer{
+#sectionAbout .card-header:hover .RScountainer{
     left: 20px;
     top: 80px;
-    
 }
 
 #sectionAbout .RSicon{
@@ -305,6 +305,7 @@
     left: -50px;
     transition: 0.5s;
 }
+
 
 /*------------------------------------------------------------------------SectionParallax------------------------------------------------------------------------*/
 #sectionParallax {
@@ -388,4 +389,98 @@
     display:flex;
     min-height: 100vh;
     flex-direction: column;
+}
+
+/*change la position des élèment dans header*/
+#sectionBlog header{
+    padding-top: 80px;
+    text-align: center;
+}
+
+/*change la taille du titre dans header*/
+#sectionBlog header h1{
+    font-size: 200%;
+}
+
+/*change la taille/couleur du titre dans header + distance entre les bordure haute droite et gauche*/
+#sectionBlog header p{
+    color: grey;
+    font-size: 125%;
+    padding-top: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#sectionBlog img{
+    z-index: 0;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+
+#sectionBlog .card{
+    display: flex;    
+    flex-direction: column;      
+    padding-top: 80px;
+    text-align: left;
+    width: 27%;
+}
+#sectionBlog .card-text h2{
+    padding-top: 20px;
+    text-align: left;
+}
+#sectionBlog .card-text p{
+    color: grey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    width: 85%;
+}
+
+
+#sectionBlog .card-header{
+    display: flex;    
+    flex-direction: column;      
+    position: relative;
+}
+#sectionBlog .card-header:hover .info{
+    z-index: 1;
+
+}
+#sectionBlog .card-header:hover img{
+    filter: brightness(50%);
+}
+
+#sectionBlog .info {
+    color: #ffffff;
+    display: flex;    
+    flex-direction: column;    
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 50px;
+}
+
+
+#sectionBlog .info .fa-user{
+    font-size: 25px;
+    padding-right: 10px;
+}
+#sectionBlog .info .fa-clock{
+    font-size: 18px;
+    padding-right: 10px;
+    padding-top: 3px;
+}
+
+
+#sectionBlog .infoName{
+    display: flex;    
+    flex-direction: row; 
+
+}
+#sectionBlog .infoDate{
+    display: flex;    
+    flex-direction: row; 
+    padding-top: 10px;
 }
