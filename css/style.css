@@ -415,7 +415,7 @@
     z-index: 0;
     width: 100%;
     border-radius: 10px;
-
+    transition: 1s;
 }
 
 
@@ -446,10 +446,11 @@
 }
 #sectionBlog .card-header:hover .info{
     z-index: 1;
-
+    transition: 1s;
 }
 #sectionBlog .card-header:hover img{
     filter: brightness(50%);
+    transition: 1s;
 }
 
 #sectionBlog .info {
@@ -457,9 +458,10 @@
     display: flex;    
     flex-direction: column;    
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     top: 50px;
     left: 50px;
+    transition: 1s;
 }
 
 
