@@ -417,6 +417,12 @@
     border-radius: 10px;
     transition: 1s;
 }
+#sectionBlog a{
+    text-decoration: none;
+    color: rgb(7, 149, 192);
+    font-weight: 900;
+    font-size: larger;
+}
 
 
 #sectionBlog .card{
@@ -485,4 +491,148 @@
     display: flex;    
     flex-direction: row; 
     padding-top: 10px;
+}
+
+/*------------------------------------------------------------------------SectionPricing------------------------------------------------------------------------*/
+#sectionPricing{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgba(248, 244, 244, 0.705);
+}
+
+/*change la position des élèment dans header*/
+#sectionPricing header{
+    padding-top: 80px;
+    text-align: center;
+}
+
+/*change la taille du titre dans header*/
+#sectionPricing header h1{
+    font-size: 200%;
+}
+
+/*change la taille/couleur du titre dans header + distance entre les bordure haute droite et gauche*/
+#sectionPricing header p{
+    color: grey;
+    font-size: 125%;
+    padding-top: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#sectionPricing main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 100px;
+}
+
+#sectionPricing .card{
+    width: 400px;
+    height: 500px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#sectionPricing .card h3{
+    padding-top: 40px;
+}
+#sectionPricing .card:hover{
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+
+#sectionPricing .card:hover .sale{
+    transition: 0.5s;
+    visibility: visible;
+}
+
+#sectionPricing .sub{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30%;
+    padding-right: 20%;
+}
+
+
+#sectionPricing  .access{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#sectionPricing  .price{
+    font-size: 50px;
+    color: #2261e7;
+}
+#sectionPricing  .month{
+    font-size: 15px;
+    color:gray;
+    align-self: flex-end;
+
+}
+#sectionPricing  .dollar{
+    font-size:30px;
+    color:#2261e7;
+    align-self:flex-start;
+
+}
+
+
+#sectionPricing  .distance{
+    display: flex;
+    flex-direction: row;
+}
+#sectionPricing .fa-circle-check{
+    color: rgb(19, 167, 19);
+    padding-right: 5px;
+}
+#sectionPricing .fa-circle-xmark{
+    color:rgb(199, 22, 22);
+    padding-right: 5px;
+}
+
+
+#sectionPricing  button{
+    width: 350px;
+    height: 50px;
+    background-color: #2261e7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sectionPricing  .buttonBox{
+    padding-top: 40px;
+}
+
+#sectionPricing  .sale{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2261e7;
+    color: #ffffff;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top:0;
+    left: 84%;
+    border-radius: 0 10px 0 10px;
+    transition: 0.5s;
+    visibility: hidden;
 }
